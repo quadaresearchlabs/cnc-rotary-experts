@@ -1,0 +1,46 @@
+<!-- Basic Meta Tags -->
+<meta charset="utf-8">
+<title>{{ .Title }} | {{ site.Title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:title" content="{{ .Title }} | {{ site.Title }}">
+<meta property="og:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ site.Params.metadata.image | absURL }}">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="{{ site.Params.favicon | relURL }}" type="image/x-icon">
+<link rel="icon" href="{{ site.Params.favicon | relURL }}" type="image/x-icon">
+
+<!-- CSS -->
+{{ $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS | minify |
+fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+<!-- Netlify Identity Widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+{{ "<!-- Google Tag Manager -->" | safeHTML }}
+{{ with site.Params.google_tag_manager }}
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '{{ . }}');
+</script>
+{{ end }}
+{{ "<!-- End Google Tag Manager -->" | safeHTML }}

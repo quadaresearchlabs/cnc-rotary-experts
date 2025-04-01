@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNC Rotary Experts</title>
+    <link>http://localhost:1313/bigspring/site/deutsch/</link>
+    <description>Recent content on CNC Rotary Experts</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/bigspring/site/deutsch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bedingungen Service</title>
+      <link>http://localhost:1313/bigspring/site/deutsch/terms-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bigspring/site/deutsch/terms-conditions/</guid>
+      <description>&lt;h5 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h5&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Datenschutz-Bestimmungen</title>
+      <link>http://localhost:1313/bigspring/site/deutsch/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bigspring/site/deutsch/privacy-policy/</guid>
+      <description>&lt;h5 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h5&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kontaktiere uns</title>
+      <link>http://localhost:1313/bigspring/site/deutsch/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bigspring/site/deutsch/contact/</guid>
+      <description>&lt;h4 id=&#34;warum-sie-uns-kontaktieren-sollten&#34;&gt;Warum Sie uns kontaktieren sollten!&lt;/h4&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preisgestaltung</title>
+      <link>http://localhost:1313/bigspring/site/deutsch/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bigspring/site/deutsch/pricing/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

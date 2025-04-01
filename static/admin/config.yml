@@ -1,0 +1,215 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "static/images" # Media files will be stored in the repo under static/images
+public_folder: "/images" # The src attribute for uploaded media will begin with /images
+
+# When using this CMS, you'll need to authenticate with a GitHub/GitLab/Bitbucket account
+# or set up your own authentication through Netlify Identity
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/english/products"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      
+  - name: "rotary-tables"
+    label: "Rotary Tables"
+    folder: "content/english/products/rotary-tables"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      
+  - name: "services"
+    label: "Services"
+    folder: "content/english/services"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Call to Action"
+        name: "call_to_action"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Enable", name: "enable", widget: "boolean", default: true }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "string", default: "images/cta.svg" }
+          - { label: "Content", name: "content", widget: "string" }
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              
+  - name: "solutions"
+    label: "Solutions"
+    folder: "content/english/solutions"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Call to Action"
+        name: "call_to_action"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Enable", name: "enable", widget: "boolean", default: true }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "string", default: "images/cta.svg" }
+          - { label: "Content", name: "content", widget: "string" }
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/english/_index.md"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - label: "Banner"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Content", name: "content", widget: "string" }
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Enable", name: "enable", widget: "boolean", default: true }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+          
+          - label: "Feature"
+            name: "feature"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Feature Items"
+                name: "feature_item"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string" }
+                  - { label: "Content", name: "content", widget: "string" }
+          
+          - label: "Services"
+            name: "service"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - label: "Service Items"
+                name: "service_item"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "string" }}
+                  - { label: "Content", name: "content", widget: "string" }
+                  - label: "Button"
+                    name: "button"
+                    widget: "object"
+                    fields:
+                      - { label: "Enable", name: "enable", widget: "boolean", default: true }
+                      - { label: "Label", name: "label", widget: "string" }
+                      - { label: "Link", name: "link", widget: "string" }
+                      
+          - label: "Screenshot"
+            name: "screenshot"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              
+          - label: "Call to Action"
+            name: "call_to_action"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Content", name: "content", widget: "string" }
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Enable", name: "enable", widget: "boolean", default: true }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  
+      - file: "content/english/about/_index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Call to Action"
+            name: "call_to_action"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Content", name: "content", widget: "string" }
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Enable", name: "enable", widget: "boolean", default: true }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  
+      - file: "content/english/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "contact" }
+          - { label: "Body", name: "body", widget: "markdown" } 

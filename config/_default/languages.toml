@@ -1,0 +1,13 @@
+################################### English language #####################################
+[en]
+languageName = "EN"
+languageCode = "en-US"
+contentDir = "content/english"
+weight = 1
+[en.params]
+########### footer content ##########
+footer_menu_left = "Company"
+footer_menu_middle = "Products"
+footer_menu_right = "Support"
+footer_content = "CNC Rotary Experts is America's premier distributor of high-precision CNC rotary tables and industrial automation solutions. We pride ourselves on delivering quality equipment, expert technical support, and reliable service nationwide."
+

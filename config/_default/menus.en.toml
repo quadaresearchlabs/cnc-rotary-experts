@@ -1,0 +1,70 @@
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Products"
+url = "/products"
+weight = 2
+
+[[main]]
+name = "Solutions"
+url = "/solutions"
+weight = 3
+
+[[main]]
+name = "Services"
+url = "/services"
+weight = 4
+
+[[main]]
+name = "About"
+url = "/about"
+weight = 5
+
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 6
+
+# footer menu left
+[[footer_left]]
+name = "About Us"
+url = "/about"
+
+[[footer_left]]
+name = "Our Team"
+url = "/team"
+
+[[footer_left]]
+name = "Careers"
+url = "/careers"
+
+
+# footer menu middle
+[[footer_middle]]
+name = "Rotary Tables"
+url = "/products/rotary-tables"
+
+[[footer_middle]]
+name = "CNC Accessories"
+url = "/products/accessories"
+
+[[footer_middle]]
+name = "Custom Solutions"
+url = "/solutions/custom"
+
+# footer menu right
+[[footer_right]]
+name = "Technical Support"
+url = "/support"
+
+[[footer_right]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+
+[[footer_right]]
+name = "Terms & Conditions"
+url = "/terms-conditions"
