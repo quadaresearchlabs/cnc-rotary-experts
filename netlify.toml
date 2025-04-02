@@ -1,11 +1,14 @@
 [build]
   publish = "public"
-  command = "hugo --minify"
+  command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.145.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --minify --buildFuture -b $DEPLOY_PRIME_URL"
@@ -16,4 +19,12 @@
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
-  status = 200 
+  status = 200
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.145.0"
+
+[[plugins]]
+  package = "@netlify/plugin-hugo" 
