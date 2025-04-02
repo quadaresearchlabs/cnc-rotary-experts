@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
 
-<head><script src="/bigspring/site/livereload.js?mindelay=10&amp;v=2&amp;port=49694&amp;path=bigspring/site/livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	
 	
 <meta charset="utf-8">
@@ -15,16 +15,16 @@
 <meta property="og:description"
     content="Lesen Sie alle neuesten Blog-Beiträge">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:49694/bigspring/site/deutsch/blog/">
-<meta property="og:image" content="http://localhost:49694/bigspring/site/images/logo.png">
+<meta property="og:url" content="http://localhost:1313/deutsch/blog/">
+<meta property="og:image" content="http://localhost:1313/images/logo.png">
 
 
-<link rel="shortcut icon" href="/bigspring/site/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="/bigspring/site/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
 
 
-<link rel="stylesheet" href="/bigspring/site/style.min.512643913b277efaa8d06634ba0e0c18ecfaab8896206da9834ed70f4577d45adaa3ee508da487e950a49219d863e6f530d3a71258cc840404a038505643adfe.css" integrity="sha512-USZDkTsnfvqo0GY0ug4MGOz6q4iWIG2pg07XD0V31Frao&#43;5QjaSH6VCkkhnYY&#43;b1MNOnEljMhAQEoDhQVkOt/g==" media="screen">
+<link rel="stylesheet" href="/style.min.cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.css" integrity="sha512-z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP&#43;DGNKHfuwvY7kxvUdBeoGlODJ6&#43;SfaPg==" media="screen">
 
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -38,10 +38,7 @@
 	
 <meta http-equiv="x-dns-prefetch-control" content="on" />
 <link rel="preconnect" href="//ajax.googleapis.com" />
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 <link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
 <link rel="preconnect" href="//cdnjs.cloudflare.com" />
 <link rel="preconnect" href="//www.googletagmanager.com" />
@@ -60,35 +57,58 @@
 
 
 
-  
-    
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
-  
-    
-  
 
-  
-    
-  
 
-  
-    
-  
-
-  
-    
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
 
 
 
+<link rel="stylesheet" href="/scss/style.css" />
 
 
 
+<style>
+  :root {
+    --primary-color: #0AA8A7;
+    --body-color: #777;
+    --text-color: #222;
+    --text-color-dark: #222;
+    --white-color: #fff;
+    --light-color: #f8f9fa;
+    --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
 
-<link rel="stylesheet" href="/bigspring/site/css/style.css" /> 
+  body {
+    font-family: var(--font-family);
+    color: var(--body-color);
+    background-color: var(--white-color);
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+  }
+</style>
 
 
 	
@@ -126,7 +146,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       
-      <a class="navbar-brand" href="/bigspring/site">
+      <a class="navbar-brand" href="/">
         
 
 
@@ -188,9 +208,9 @@
       class="img"
       width="180"
       height="29"
-      src="/bigspring/site/images/logo_hu_abd8d643ace73bd3.webp"
+      src="/images/logo_hu_abd8d643ace73bd3.webp"
       alt="CNC Rotary Experts"
-      onerror="this.onerror=null;this.src='\/bigspring\/site\/images\/logo_hu_744d7687ac2e44ae.png'" />
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_744d7687ac2e44ae.png'" />
   
   
 
@@ -205,37 +225,37 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/" title="Home">Home</a>
+            <a class="nav-link" href="/" title="Home">Home</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/products" title="Products">Products</a>
+            <a class="nav-link" href="/products" title="Products">Products</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/solutions" title="Solutions">Solutions</a>
+            <a class="nav-link" href="/solutions" title="Solutions">Solutions</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/services" title="Services">Services</a>
+            <a class="nav-link" href="/services" title="Services">Services</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/about" title="About">About</a>
+            <a class="nav-link" href="/about" title="About">About</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/contact" title="Contact">Contact</a>
+            <a class="nav-link" href="/contact" title="Contact">Contact</a>
           </li>
           
           
@@ -246,7 +266,7 @@
 
         
         
-        <a href="/bigspring/site/contact" title="Get Started" class="btn btn-sm btn-primary ml-3">Get Started</a>
+        <a href="/contact" title="Get Started" class="btn btn-sm btn-primary ml-3">Get Started</a>
         
         
       </div>
@@ -353,27 +373,27 @@
         <picture>
           <source
             
-              srcset="/bigspring/site/images/blog/post-1_hu_94b31f941b331188.webp"
+              srcset="/images/blog/post-1_hu_94b31f941b331188.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/bigspring/site/images/blog/post-1_hu_95132beb1732b090.webp"
+              srcset="/images/blog/post-1_hu_95132beb1732b090.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/bigspring/site/images/blog/post-1_hu_f037acee40c6549.webp"
+              srcset="/images/blog/post-1_hu_f037acee40c6549.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/bigspring/site/images/blog/post-1_hu_21f5aed6eb78f722.webp"
+              srcset="/images/blog/post-1_hu_21f5aed6eb78f722.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/bigspring/site/images/blog/post-1_hu_d7a0f76eeca06d9c.jpg"
+              src="/images/blog/post-1_hu_d7a0f76eeca06d9c.jpg"
             class=" rounded-2 w-100 img"
             alt="Adversus is a web-based dialer and practical CRM solution"
             width="1600"
@@ -391,9 +411,9 @@
 
           </div>
           <div class="col-md-6">
-            <h2 ><a href="http://localhost:49694/bigspring/site/blog/post-1/" title="Adversus is a web-based dialer and practical CRM solution" class="text-dark d-inline-block">Adversus is a web-based dialer and practical CRM solution</a></h2>
+            <h2 ><a href="http://localhost:1313/blog/post-1/" title="Adversus is a web-based dialer and practical CRM solution" class="text-dark d-inline-block">Adversus is a web-based dialer and practical CRM solution</a></h2>
             <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>  
-            <a href="http://localhost:49694/bigspring/site/blog/post-1/" title="Read More - Adversus is a web-based dialer and practical CRM solution" class="btn btn-sm btn-primary">Read More</a>
+            <a href="http://localhost:1313/blog/post-1/" title="Read More - Adversus is a web-based dialer and practical CRM solution" class="btn btn-sm btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -477,7 +497,7 @@
 
         <img
           
-            src="/bigspring/site/images/blog/post-3_hu_f7c60a6c65b1c3e9.webp" loading="lazy"
+            src="/images/blog/post-3_hu_f7c60a6c65b1c3e9.webp" loading="lazy"
             decoding="async"
           
 
@@ -486,7 +506,7 @@
           width="460"
           height="230"
           onerror="this.onerror='null';
-          this.src='\/bigspring\/site\/images\/blog\/post-3_hu_70ab305dae8d4153.jpg';" />
+          this.src='\/images\/blog\/post-3_hu_70ab305dae8d4153.jpg';" />
 
         
       
@@ -500,9 +520,9 @@
 
 
           <div class="card-body p-0">
-            <h3><a href="http://localhost:49694/bigspring/site/blog/post-7/" title="How and why we decided to launch an EMI scheme for our employees" class="text-dark d-inline-block">How and why we decided to launch an EMI scheme for our employees</a></h3>
+            <h3><a href="http://localhost:1313/blog/post-7/" title="How and why we decided to launch an EMI scheme for our employees" class="text-dark d-inline-block">How and why we decided to launch an EMI scheme for our employees</a></h3>
             <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
-            <a href="http://localhost:49694/bigspring/site/blog/post-7/" title="Read More - How and why we decided to launch an EMI scheme for our employees" class="btn btn-sm btn-primary btn-sm">Read More</a>
+            <a href="http://localhost:1313/blog/post-7/" title="Read More - How and why we decided to launch an EMI scheme for our employees" class="btn btn-sm btn-primary btn-sm">Read More</a>
           </div>
         </div>
       </div>
@@ -584,7 +604,7 @@
 
         <img
           
-            src="/bigspring/site/images/blog/post-5_hu_860dc0b0a792bd75.webp" loading="lazy"
+            src="/images/blog/post-5_hu_860dc0b0a792bd75.webp" loading="lazy"
             decoding="async"
           
 
@@ -593,7 +613,7 @@
           width="460"
           height="230"
           onerror="this.onerror='null';
-          this.src='\/bigspring\/site\/images\/blog\/post-5_hu_a6e612da309da9ce.jpg';" />
+          this.src='\/images\/blog\/post-5_hu_a6e612da309da9ce.jpg';" />
 
         
       
@@ -607,9 +627,9 @@
 
 
           <div class="card-body p-0">
-            <h3><a href="http://localhost:49694/bigspring/site/blog/post-8/" title="What to consider before starting a business – Inside The Studio" class="text-dark d-inline-block">What to consider before starting a business – Inside The Studio</a></h3>
+            <h3><a href="http://localhost:1313/blog/post-8/" title="What to consider before starting a business – Inside The Studio" class="text-dark d-inline-block">What to consider before starting a business – Inside The Studio</a></h3>
             <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
-            <a href="http://localhost:49694/bigspring/site/blog/post-8/" title="Read More - What to consider before starting a business – Inside The Studio" class="btn btn-sm btn-primary btn-sm">Read More</a>
+            <a href="http://localhost:1313/blog/post-8/" title="Read More - What to consider before starting a business – Inside The Studio" class="btn btn-sm btn-primary btn-sm">Read More</a>
           </div>
         </div>
       </div>
@@ -691,7 +711,7 @@
 
         <img
           
-            src="/bigspring/site/images/blog/post-1_hu_9bfcff1c90e2481b.webp" loading="lazy"
+            src="/images/blog/post-1_hu_9bfcff1c90e2481b.webp" loading="lazy"
             decoding="async"
           
 
@@ -700,7 +720,7 @@
           width="460"
           height="230"
           onerror="this.onerror='null';
-          this.src='\/bigspring\/site\/images\/blog\/post-1_hu_b3b68598a16a2ec0.jpg';" />
+          this.src='\/images\/blog\/post-1_hu_b3b68598a16a2ec0.jpg';" />
 
         
       
@@ -714,9 +734,330 @@
 
 
           <div class="card-body p-0">
-            <h3><a href="http://localhost:49694/bigspring/site/blog/post-1/" title="Adversus is a web-based dialer and practical CRM solution" class="text-dark d-inline-block">Adversus is a web-based dialer and practical CRM solution</a></h3>
+            <h3><a href="http://localhost:1313/blog/post-1/" title="Adversus is a web-based dialer and practical CRM solution" class="text-dark d-inline-block">Adversus is a web-based dialer and practical CRM solution</a></h3>
             <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
-            <a href="http://localhost:49694/bigspring/site/blog/post-1/" title="Read More - Adversus is a web-based dialer and practical CRM solution" class="btn btn-sm btn-primary btn-sm">Read More</a>
+            <a href="http://localhost:1313/blog/post-1/" title="Read More - Adversus is a web-based dialer and practical CRM solution" class="btn btn-sm btn-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 pb-4">
+        <div class="card bg-transparent border-0">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images/blog/post-2_hu_de3f635af4cd28b6.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Pump-up the team morale and celebrate the excellence"
+          class=" rounded-2 mb-4 img"
+          width="460"
+          height="230"
+          onerror="this.onerror='null';
+          this.src='\/images\/blog\/post-2_hu_7a9cc978184ec43.jpg';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+          <div class="card-body p-0">
+            <h3><a href="http://localhost:1313/blog/post-2/" title="Pump-up the team morale and celebrate the excellence" class="text-dark d-inline-block">Pump-up the team morale and celebrate the excellence</a></h3>
+            <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
+            <a href="http://localhost:1313/blog/post-2/" title="Read More - Pump-up the team morale and celebrate the excellence" class="btn btn-sm btn-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 pb-4">
+        <div class="card bg-transparent border-0">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images/blog/post-3_hu_f7c60a6c65b1c3e9.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="screens with built in Present and Dismiss animations."
+          class=" rounded-2 mb-4 img"
+          width="460"
+          height="230"
+          onerror="this.onerror='null';
+          this.src='\/images\/blog\/post-3_hu_70ab305dae8d4153.jpg';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+          <div class="card-body p-0">
+            <h3><a href="http://localhost:1313/blog/post-3/" title="screens with built in Present and Dismiss animations." class="text-dark d-inline-block">screens with built in Present and Dismiss animations.</a></h3>
+            <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
+            <a href="http://localhost:1313/blog/post-3/" title="Read More - screens with built in Present and Dismiss animations." class="btn btn-sm btn-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 pb-4">
+        <div class="card bg-transparent border-0">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images/blog/post-4_hu_3c72343055af006f.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Adversus is a web-based dialer and practical CRM solution"
+          class=" rounded-2 mb-4 img"
+          width="460"
+          height="230"
+          onerror="this.onerror='null';
+          this.src='\/images\/blog\/post-4_hu_9d140cb38933f6c8.jpg';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+          <div class="card-body p-0">
+            <h3><a href="http://localhost:1313/blog/post-4/" title="Adversus is a web-based dialer and practical CRM solution" class="text-dark d-inline-block">Adversus is a web-based dialer and practical CRM solution</a></h3>
+            <p class="mb-4"><p>Heading example Here is example of hedings. You can use this heading by following markdownify rules.</p></p>
+            <a href="http://localhost:1313/blog/post-4/" title="Read More - Adversus is a web-based dialer and practical CRM solution" class="btn btn-sm btn-primary btn-sm">Read More</a>
           </div>
         </div>
       </div>
@@ -749,7 +1090,7 @@
     
     
     <li class="page-item">
-      <a href="/bigspring/site/deutsch/blog/" class="page-link active ">
+      <a href="/deutsch/blog/" class="page-link active ">
         1
       </a>
     </li>
@@ -763,7 +1104,7 @@
     
     
     <li class="page-item">
-      <a href="/bigspring/site/deutsch/blog/page/2/" class="page-link">
+      <a href="/deutsch/blog/page/2/" class="page-link">
         2
       </a>
     </li>
@@ -771,21 +1112,7 @@
     
     
     
-    
-    
-    
-    
-    
-    <li class="page-item">
-      <a href="/bigspring/site/deutsch/blog/page/3/" class="page-link">
-        3
-      </a>
-    </li>
-    
-    
-    
-    
-    <li class="page-item"><a class="page-link arrow" href="/bigspring/site/deutsch/blog/page/2/" aria-label="Pagination Arrow">
+    <li class="page-item"><a class="page-link arrow" href="/deutsch/blog/page/2/" aria-label="Pagination Arrow">
       <i class="fas fa-angle-right"></i>
     </a></li>
     
@@ -4268,23 +4595,15 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="application/javascript" ></script>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" type="application/javascript" ></script>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="application/javascript" ></script>
 
 
 
@@ -4295,7 +4614,7 @@
 <script
   crossorigin="anonymous"
   integrity=""
-  src="/bigspring/site/js/scripts.js"></script>
+  src="/js/scripts.js"></script>
 
 
 
@@ -4315,7 +4634,7 @@
 
 
 <script>
-  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/bigspring/site/service-worker.js");}
+  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
 </script>
 
 

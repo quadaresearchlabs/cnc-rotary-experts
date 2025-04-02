@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
 
-<head><script src="/bigspring/site/livereload.js?mindelay=10&amp;v=2&amp;port=49694&amp;path=bigspring/site/livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	
 	
 <meta charset="utf-8">
@@ -15,16 +15,16 @@
 <meta property="og:description"
     content="This is meta description">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:49694/bigspring/site/deutsch/contact/">
-<meta property="og:image" content="http://localhost:49694/bigspring/site/images/logo.png">
+<meta property="og:url" content="http://localhost:1313/deutsch/contact/">
+<meta property="og:image" content="http://localhost:1313/images/logo.png">
 
 
-<link rel="shortcut icon" href="/bigspring/site/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="/bigspring/site/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
 
 
-<link rel="stylesheet" href="/bigspring/site/style.min.512643913b277efaa8d06634ba0e0c18ecfaab8896206da9834ed70f4577d45adaa3ee508da487e950a49219d863e6f530d3a71258cc840404a038505643adfe.css" integrity="sha512-USZDkTsnfvqo0GY0ug4MGOz6q4iWIG2pg07XD0V31Frao&#43;5QjaSH6VCkkhnYY&#43;b1MNOnEljMhAQEoDhQVkOt/g==" media="screen">
+<link rel="stylesheet" href="/style.min.cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.css" integrity="sha512-z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP&#43;DGNKHfuwvY7kxvUdBeoGlODJ6&#43;SfaPg==" media="screen">
 
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -38,10 +38,7 @@
 	
 <meta http-equiv="x-dns-prefetch-control" content="on" />
 <link rel="preconnect" href="//ajax.googleapis.com" />
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 <link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
 <link rel="preconnect" href="//cdnjs.cloudflare.com" />
 <link rel="preconnect" href="//www.googletagmanager.com" />
@@ -60,35 +57,58 @@
 
 
 
-  
-    
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
-  
-    
-  
 
-  
-    
-  
 
-  
-    
-  
-
-  
-    
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
 
 
 
+<link rel="stylesheet" href="/scss/style.css" />
 
 
 
+<style>
+  :root {
+    --primary-color: #0AA8A7;
+    --body-color: #777;
+    --text-color: #222;
+    --text-color-dark: #222;
+    --white-color: #fff;
+    --light-color: #f8f9fa;
+    --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
 
-<link rel="stylesheet" href="/bigspring/site/css/style.css" /> 
+  body {
+    font-family: var(--font-family);
+    color: var(--body-color);
+    background-color: var(--white-color);
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+  }
+</style>
 
 
 	
@@ -126,7 +146,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       
-      <a class="navbar-brand" href="/bigspring/site">
+      <a class="navbar-brand" href="/">
         
 
 
@@ -188,9 +208,9 @@
       class="img"
       width="180"
       height="29"
-      src="/bigspring/site/images/logo_hu_abd8d643ace73bd3.webp"
+      src="/images/logo_hu_abd8d643ace73bd3.webp"
       alt="CNC Rotary Experts"
-      onerror="this.onerror=null;this.src='\/bigspring\/site\/images\/logo_hu_744d7687ac2e44ae.png'" />
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_744d7687ac2e44ae.png'" />
   
   
 
@@ -205,37 +225,37 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/" title="Home">Home</a>
+            <a class="nav-link" href="/" title="Home">Home</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/products" title="Products">Products</a>
+            <a class="nav-link" href="/products" title="Products">Products</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/solutions" title="Solutions">Solutions</a>
+            <a class="nav-link" href="/solutions" title="Solutions">Solutions</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/services" title="Services">Services</a>
+            <a class="nav-link" href="/services" title="Services">Services</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/about" title="About">About</a>
+            <a class="nav-link" href="/about" title="About">About</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/bigspring/site/contact" title="Contact">Contact</a>
+            <a class="nav-link" href="/contact" title="Contact">Contact</a>
           </li>
           
           
@@ -246,7 +266,7 @@
 
         
         
-        <a href="/bigspring/site/contact" title="Get Started" class="btn btn-sm btn-primary ml-3">Get Started</a>
+        <a href="/contact" title="Get Started" class="btn btn-sm btn-primary ml-3">Get Started</a>
         
         
       </div>
@@ -3782,23 +3802,15 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="application/javascript" ></script>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" type="application/javascript" ></script>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="application/javascript" ></script>
 
 
 
@@ -3809,7 +3821,7 @@
 <script
   crossorigin="anonymous"
   integrity=""
-  src="/bigspring/site/js/scripts.js"></script>
+  src="/js/scripts.js"></script>
 
 
 
@@ -3829,7 +3841,7 @@
 
 
 <script>
-  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/bigspring/site/service-worker.js");}
+  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
 </script>
 
 
