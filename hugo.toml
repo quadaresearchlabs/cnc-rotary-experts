@@ -1,7 +1,9 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/bigspring/site/"
+baseURL = "https://cnc-rotary-experts.netlify.app/"
 title = "CNC Rotary Experts"
 theme = "bigspring"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
 # post pagination
@@ -143,26 +145,58 @@ font_icon = "Font Awesome 6 Free"          # https://fontawesome.com/v5.15/icons
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/swiper/swiper-bundle.css"
+link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/font-awesome/v6/brands.css"
+link = "plugins/themify-icons/themify-icons.css"
 [[params.plugins.css]]
-link = "plugins/font-awesome/v6/solid.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/regular.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/icons.css"
+link = "plugins/slick/slick.css"
 
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js"
+link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
-link = "plugins/webfont/webfont-loader-2.js"
+link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-link = "plugins/cookie.js"
-[[params.plugins.js]]
-link = "plugins/lazy-loader.js"
-[[params.plugins.js]]
-link = "js/tab.js"
+link = "plugins/slick/slick.min.js"
+
+# Site Params
+[params]
+logo = "images/logo.png"
+logo_width = "200px"
+description = "CNC Rotary Tables and Automation Solutions"
+author = "CNC Rotary Experts"
+contact_form_action = "#"
+image = "images/logo.png"
+
+# Navigation
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Products"
+url = "/products"
+weight = 2
+
+[[menu.main]]
+name = "Solutions"
+url = "/solutions"
+weight = 3
+
+[[menu.main]]
+name = "Services"
+url = "/services"
+weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 5
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 6
 
