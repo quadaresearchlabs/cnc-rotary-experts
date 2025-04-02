@@ -19,12 +19,4 @@
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
-  status = 200
-
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.145.0"
-
-[[plugins]]
-  package = "@netlify/plugin-hugo" 
+  status = 200 
