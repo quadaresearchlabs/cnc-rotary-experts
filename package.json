@@ -1,0 +1,10 @@
+{
+    "name": "cnc-rotary-experts",
+    "version": "1.0.0",
+    "description": "CNC Rotary Experts Website",
+    "main": "index.js",
+    "scripts": {
+        "dev": "hugo server",
+        "build": "hugo --gc --minify"
+    }
+}
