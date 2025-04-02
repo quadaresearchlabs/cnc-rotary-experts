@@ -1,20 +1,20 @@
 ---
-title: "CNC Rotary Tables & Automation Solutions"
-subtitle: ""
-# meta description
-description: "High-precision CNC rotary tables and accessories for industrial manufacturing. Browse our complete product catalog of rotary tables, tilting rotary tables, and CNC automation solutions."
+title: CNC Rotary Tables & Automation Solutions
+subtitle: yoyoyo
+description: High-precision CNC rotary tables and accessories for industrial
+  manufacturing. Browse our complete product catalog of rotary tables, tilting
+  rotary tables, and CNC automation solutions.
 draft: false
-
-# call_to_action
 call_to_action:
   enable: true
-  title: "Need help finding the right solution?"
-  image: "images/cta.svg"
-  content: "Our product specialists can help you identify the perfect rotary table for your specific application requirements."
+  title: Need help finding the right solution?
+  image: images/cta.svg
+  content: Our product specialists can help you identify the perfect rotary table
+    for your specific application requirements.
   button:
     enable: true
-    label: "Contact an Expert"
-    link: "contact/"
+    label: Contact an Expert
+    link: contact/
 ---
 
 ## Premier Provider of CNC Rotary Tables
