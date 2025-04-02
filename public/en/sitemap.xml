@@ -124,7 +124,11 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/english/products/cnc-1-1/</loc>
+  </url><url>
     <loc>http://localhost:1313/english/products/cnc-1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/products/cnc-1-1/</loc>
   </url><url>
     <loc>http://localhost:1313/products/cnc-1/</loc>
   </url><url>
